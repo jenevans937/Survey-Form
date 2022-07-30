@@ -1,0 +1,63 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+NEED TO ADD NAMES FOR EACH INPUT
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jen's CYF Step 3 Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+  <body>
+    <div>
+      <h1 id="title">Header 1: Content TBC</h1>
+      <p id="description">Please see the content below for a demonstration of the different types of forms I have learnt so far. </p>
+      <form id="survey-form" action="mailto:jenevans405@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <fieldset class="set1">
+          <h4>Your details</h4>
+          <label id="name-label">Name: <input type="text" required name="name" id="name" placeholder="What should we call you?"/></label>
+          <label id="postcode-label">First part of Postcode: <input type="text" name="location" id="postcode"/></label>
+          <label id="phone-number-label">Phone number: <input type="number" name="phone" id="phone-number"/></label>
+          <label id="email-label">Email address: <input type="email" id="email" type="email" required placeholder="youremailhere@server.com"/></label>
+          <label id="label-who" name="who">Are you 
+          <select id="dropdown">
+            <option id="dropdown" value="">(select one)</option>
+            <option id="dropdown" value="1">a CYF Student</option>
+            <option id="dropdown" value="2">a CYF Volunteer</option>
+            <option id="dropdown" value="3">Other</option>
+          </select>
+        </fieldset>
+        <fieldset class="set2">
+          <h4>Please select the opportunities that you would be interested in hearing about:</h4>
+          <label><input type="checkbox" name="beach" value="beach"/> beach trips</label>
+          <label><input type="checkbox" name="sports" value="sports"/> team sports</label>
+          <label><input type="checkbox" name="study" value="study"/> study groups</label>
+          <label><input type="checkbox" name="hiking" value="hiking"/> hiking</label>
+          <label><input type="checkbox" name="other" value="other"/> other <input type="text" name="other-type"/></label>
+          <p id="availability-q">What days of the week are you usually free?</p>
+          <label id="Mon-label"><input type="radio" id="Mon" value="Mon" name="availability"> Monday</label>
+           <label id="Tue-label"><input type="radio" id="Tue" value="Tue" name="availability"> Tuesday</label>
+          <label id="Wed-label"><input type="radio" id="Wed" value="Wed" name="availability"> Wednesday</label>
+           <label id="Thu-label"><input type="radio" id="Thu" value="Thu" name="availability"> Thursday</label>
+           <label id="Fri-label"><input type="radio" id="Fri" value="Fri" name="availability"> Friday</label>
+           <label id="Sat-label"><input type="radio" id="Sat" Value="Sat" name="availability"> Saturday</label>
+           <label id="Sun-label"><input type="radio" id="Sun" value="Sun" name="availability"> Sunday</label>
+          
+        </fieldset>
+        <fieldset class="set3">
+          <label>If you would like, you can upload a profile picture here:<input type="file" name="pic"/></label>
+          <label id="number-label">What is your age? (optional) <input type="number" name="age" min="13" max="100" id="number" placeholder="18"/></label>
+        </fieldset>
+        <fieldset>
+          <label><h4>Any other comments?</h4><textarea rows="3" cols="30" name="comments"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+      </form>
+      </div>
+    </body>
+  </html>
